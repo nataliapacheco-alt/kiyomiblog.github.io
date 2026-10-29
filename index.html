@@ -1,108 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kiyomiblog — el rincón de Natalia</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff5f8" />
+  <title>Una sorpresa para ti ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <a class="logo" href="#top">kiyomi<i>.</i>blog</a>
-  <nav><a class="h" href="#publicaciones">Publicaciones</a><a class="h" href="#yo">Quién soy</a><button id="theme" aria-label="Cambiar tema">☾</button></nav>
-</header>
-
-<main id="top">
-<section class="hero">
-  <div>
-    <span class="eyebrow">✳ UN RINCÓN MUY MÍO</span>
-    <h1>Pequeñas historias, <em>grandes miradas.</em></h1>
-    <p>Aquí guardo lo que observo, lo que siento y lo que aprendo. Pasa, ponte cómoda y lee a tu ritmo.</p>
-    <a class="btn" href="#publicaciones">Leer mis publicaciones ↓</a>
-  </div>
-  <div class="art" aria-hidden="true">
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-    <div class="mono">K<span>.</span></div><span class="spark">✳</span>
-  </div>
-</section>
-
-<section id="publicaciones">
-  <span class="eyebrow">PUBLICACIONES · 02</span>
-  <h2>Lo que he <em>escrito.</em></h2>
-  <div class="posts">
-    <button class="post" data-n="1">
-      <div class="cover c1"><b>01</b></div>
-      <div class="body"><span class="meta">IDEAS · 4 MIN</span><h3>Autocensura en Bolivia</h3><p>caso de Monica Von Borries.</p><span class="more">Leer →</span></div>
-    </button>
-    <button class="post" data-n="2">
-      <div class="cover c2"><b>02</b></div>
-      <div class="body"><span class="meta">IDENTIDAD · 5 MIN</span><h3>Las palabras que heredamos</h3><p>Los acentos, dichos y silencios que cuentan de dónde venimos.</p><span class="more">Leer →</span></div>
-    </button>
+  <div id="balloon-intro" aria-label="Globos de cumpleaños flotando">
+    <div class="intro-note">una pequeña sorpresa para ti</div>
+    <div class="balloon-field" id="balloonField"></div>
+    <button id="skipIntro" class="skip-intro">entrar a la sorpresa ↗</button>
   </div>
 
-  <article id="a1">
-    <span class="meta">IDEAS · 4 MIN DE LECTURA</span>
-    <h3>Autocensura en Bolivia</h3>
-    <p>Cuando una fiscal que investigaba asuntos delicados es asesinada, la pregunta no se limita a quién cometió el crimen. También surge otra, fundamental para la democracia: ¿qué ocurre con la libertad de investigar, denunciar y hacer pública la verdad cuando la violencia entra en escena?</p>
-    <blockquote>Un crimen que sacudió a Bolivia.</blockquote>
-    <p>  El 27 de febrero de 2004, Mónica Von Borries Orías, fiscal de materia en Santa Cruz de la Sierra, murió tras la explosión de un artefacto colocado en su vehículo. Su asesinato conmocionó al país y puso en el centro de la atención pública los riesgos que podían rodear determinadas investigaciones judiciales.
+  <main id="birthdayPage" class="page hidden">
+    <div class="confetti confetti-one">✦</div><div class="confetti confetti-two">♡</div>
+    <section class="birthday-card">
+      <div class="topline"><span>✿</span> un día muy especial <span>✿</span></div>
+      <div class="cake" aria-hidden="true">
+        <span class="cake-candle">✧</span>
+        <span class="cake-emoji">🎂</span>
+        <span class="cake-sparkle sparkle-a">✦</span><span class="cake-sparkle sparkle-b">✧</span>
+      </div>
+      <p class="eyebrow">hoy celebramos a alguien increíble</p>
+      <h1>¡Feliz<br class="mobile-break"> cumpleaños<span>!!!</span></h1>
+      <div class="age">felices <strong>19</strong> ♡</div>
+      <p class="intro-copy">un nuevo año, nuevas historias y un montón de cosas bonitas por vivir.</p>
+      <div class="decor-line"><span>♡</span><i></i><span>♡</span></div>
+      <p class="gift-prompt">hay algo esperándote...</p>
+      <button class="gift-button" id="openGift">ingresa para ver tu regalo <span>→</span></button>
+      <p class="tiny-note">pista: son cuatro numeritos ✨</p>
+    </section>
+    <footer>hecho con mucho cariño ♡</footer>
+  </main>
 
-    Von Borries había intervenido en procesos relacionados con asuntos delicados, entre ellos investigaciones vinculadas al narcotráfico y presuntas irregularidades. Tras su muerte, las autoridades emprendieron una investigación para esclarecer el crimen e identificar a los responsables.
-
-    El caso llegó a los tribunales y estuvo marcado por dificultades probatorias. En 2006, Francisco Javier Villanueva fue absuelto por falta de pruebas. Por ello, es necesario distinguir entre las hipótesis que surgieron durante las pesquisas y las responsabilidades que pudieron acreditarse judicialmente.
-
-    Pero el caso también permite examinar un problema que trasciende el expediente criminal: la censura y las distintas formas en que puede limitarse el acceso a la información y la expresión pública..</p>
-    <blockquote>La censura más allá de las prohibiciones.</blockquote>
-    <p> Cuando hablamos de censura, solemos imaginar a una autoridad que prohíbe publicar una noticia, ordena retirar un artículo o impide que un medio difunda determinada información. Estas son manifestaciones directas de la censura, especialmente cuando existe una intervención destinada a impedir la circulación de contenidos.
-
-    Sin embargo, la censura también puede producirse mediante presiones, amenazas, restricciones institucionales o mecanismos que obstaculizan la difusión de información de interés público.
-
-    En el caso de Mónica Von Borries, es fundamental establecer una distinción: el asesinato de la fiscal no demuestra, por sí solo, que haya existido una operación de censura ni que su muerte tuviera como objetivo silenciar una investigación específica. Para sostener esa conclusión serían necesarias pruebas que acreditaran ese propósito</p>
-    <blockquote>Cuando la información se convierte en un asunto de poder.</blockquote>
-    <p> La información no es únicamente un conjunto de datos. También es una herramienta que permite fiscalizar a las instituciones, investigar posibles irregularidades y exigir responsabilidades.
-
-    Por esa razón, el acceso a la información y la libertad de expresión son esenciales para el funcionamiento de una sociedad democrática. Cuando una autoridad impide la publicación de una investigación, cuando se restringe injustificadamente el acceso a documentos públicos o cuando se bloquea la difusión de información de interés colectivo, se limita la capacidad de la ciudadanía para comprender y cuestionar lo que ocurre a su alrededor.
-
-    La censura puede afectar tanto a periodistas como a investigadores, funcionarios y ciudadanos. Sus consecuencias no se reducen a una noticia que no llega a publicarse: también pueden impedir que una denuncia sea conocida, que una irregularidad sea examinada públicamente o que una institución rinda cuentas.</p>
-    <blockquote>¿Puede la violencia convertirse en una forma de silenciamiento?</blockquote>
-    <p> La violencia puede funcionar como un mecanismo de intimidación y, en determinados contextos, utilizarse para impedir que una persona continúe denunciando o investigando. Cuando se demuestra que una agresión tiene como propósito impedir la difusión de información, puede analizarse como una forma de silenciamiento.
-
-    No obstante, es necesario diferenciar entre el efecto intimidatorio que un crimen puede producir y la intención específica de censurar. El primero puede ser objeto de análisis social; el segundo requiere evidencias que permitan establecerlo.
-
-    En el caso de Von Borries, el atentado generó conmoción y abrió interrogantes sobre la seguridad de los operadores de justicia. Para determinar si constituyó además un acto de censura dirigido a impedir una investigación concreta, sería necesario contar con documentación que demostrara esa conexión.
-
-    Esta distinción no resta importancia al crimen. Al contrario, permite examinarlo con rigor, sin convertir las sospechas en conclusiones ni atribuir motivaciones que no han sido probadas. </p>
-    <blockquote>El silencio de una sociedad no puede darse por sentado</blockquote>
-    <p> La muerte de Mónica Von Borries constituye un episodio doloroso de la historia judicial boliviana. Su caso recuerda la importancia de investigar los delitos con independencia, respetar las garantías judiciales y proteger a quienes desempeñan funciones públicas sensibles.
-    Relacionarlo con la censura no significa afirmar que el crimen haya sido ordenado para silenciarla, porque esa motivación no debe presentarse como un hecho probado sin respaldo documental. Significa reconocer que la violencia contra quienes investigan puede plantear preocupaciones legítimas sobre la libertad de información y las condiciones necesarias para esclarecer hechos de interés público.</p>
-    <button class="close">Cerrar ✕</button>
-  </article>
-
-  <article id="a2">
-    <span class="meta">IDENTIDAD · 5 MIN DE LECTURA</span>
-    <h3>Monografía - CLASE EXAMEN PARCIAL</h3>
-    <blockquote></blockquote>
-    <p>Escribir sobre ellas es mi forma de agradecerles. Porque en cada dicho y en cada silencio familiar vive una parte de quienes somos.</p>
-    <button class="close">Cerrar ✕</button>
-  </article>
-</section>
-
-<section id="yo">
-  <div class="about">
-    <div class="photo">N</div>
-    <div>
-      <span class="eyebrow">DETRÁS DEL BLOG</span>
-      <h2>Hola, soy <em>Natalia.</em></h2>
-      <p>Soy estudiante de Comunicación Digital y Multimedia en la Universidad Católica Boliviana San Pablo. Me interesa cómo las historias, las imágenes y las palabras conectan a las personas.</p>
-      <p>Kiyomiblog es el lugar donde mi curiosidad encuentra voz. ✳</p>
+  <section id="codeScreen" class="code-screen hidden">
+    <div class="code-card">
+      <div class="mini-flower">✿</div>
+      <p class="eyebrow">solo para ti</p>
+      <h2>Una sorpresita</h2>
+      <p>escribe el código para abrir tu regalo ♡</p>
+      <form id="codeForm">
+        <label class="sr-only" for="giftCode">Código de cuatro dígitos</label>
+        <input id="giftCode" type="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="••••" aria-describedby="codeError" />
+        <button type="submit" class="gift-button">abrir mi regalo ✧</button>
+        <p id="codeError" class="error-message" role="alert"></p>
+      </form>
+      <button class="back-button" id="backToBirthday">← volver</button>
     </div>
-  </div>
-</section>
-</main>
+  </section>
 
-<footer><span class="logo">kiyomi<i>.</i>blog</span>© 2026 · Hecho con cariño por Natalia</footer>
+  <main id="giftPage" class="gift-page hidden">
+    <header class="gift-header">
+      <span class="header-flower">✿</span>
+      <p>para ti, en tus 19</p>
+      <span class="header-flower">✿</span>
+    </header>
+    <article class="letter-card">
+      <div class="letter-top"><span>una carta pequeñita</span><span>♡ 19 ♡</span></div>
+      <div class="letter-decoration">୨୧</div>
+      <h2>Feliz cumpleaños, bonita</h2>
+      <p class="letter-lead">Primero, una canción para acompañar este momento.</p>
 
-<script src="script.js"></script>
+      <section class="music-card">
+        <div class="album-art art-one"><span>♫</span><small>for your day</small></div>
+        <div class="track-info">
+          <p class="track-label">CANCIÓN · 01</p>
+          <h3>Tu primera canción</h3>
+          <p>un pequeño regalo musical ♡</p>
+          <a class="youtube-link" href="https://www.youtube.com/watch?v=M4qX5wzx-wY&list=RDM4qX5wzx-wY&start_radio=1" target="_blank" rel="noopener">▶ escuchar en YouTube</a>
+        </div>
+      </section>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/M4qX5wzx-wY" title="Primera canción de cumpleaños" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="letter-divider"><span>✿</span><i></i><span>✿</span></div>
+      <p class="message">hey! ya cumpliendo mi edad (estamos viejas :( ) jajajaj no te creas!<br><br>
+      que puedo decirte! desearte todo lo positivo en este año y más que todo mañana donde rindes una prueba muy díficil pero no te preocupes ya que si va bien o si va mal!, mi celular siempre estará abierto para escucharte ya sea en llamada, mensaje o audio, no quiero que dudes nunca de eso!, sip?, que puedo decirte, solo queda cantar las mañanitas (soy mala cantando) jajja pero fuera de broma, quiero que todo este año vaya muy bien contigo!, quiero verte en grande y quiero verte feliz!</p>
+
+      <section class="music-card">
+        <div class="album-art art-two"><span>♫</span><small>you got this</small></div>
+        <div class="track-info">
+          <p class="track-label">CANCIÓN · 02</p>
+          <h3>Para mañana ♡</h3>
+          <p>un poquito de ánimo para ti</p>
+          <a class="youtube-link" href="https://www.youtube.com/watch?v=naywLjcfY3E&list=RDnaywLjcfY3E&start_radio=1" target="_blank" rel="noopener">▶ escuchar en YouTube</a>
+        </div>
+      </section>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/naywLjcfY3E" title="Segunda canción de cumpleaños" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <blockquote>“esa canción la de arriba xddd quiero que sepas que es para lo de mañana porque será fuerte! pero veraz que todo saldrá bien mañana y no dudes ya que yo siempre estaré para apoyarte :)”</blockquote>
+
+      <div class="letter-divider"><span>♡</span><i></i><span>♡</span></div>
+      <p class="letter-lead final-note">y para terminar, una última canción para ti...</p>
+      <section class="music-card">
+        <div class="album-art art-three"><span>♫</span><small>with love</small></div>
+        <div class="track-info">
+          <p class="track-label">CANCIÓN · 03</p>
+          <h3>Una última canción</h3>
+          <p>porque hoy se celebra tu existencia ✨</p>
+          <a class="youtube-link" href="https://www.youtube.com/watch?v=D9W4DLjmoOM&list=RDD9W4DLjmoOM&start_radio=1" target="_blank" rel="noopener">▶ escuchar en YouTube</a>
+        </div>
+      </section>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/D9W4DLjmoOM" title="Tercera canción de cumpleaños" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="signoff">
+        <span class="signoff-flower">✿</span>
+        <p>felices 19, que la vida te abrace bonito.</p>
+        <small>siempre estaré aquí para ti ♡</small>
+      </div>
+    </article>
+    <footer>con cariño, para alguien especial ♡</footer>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
